@@ -11,7 +11,7 @@ import {
     DropdownMenuItem
 } from "@/components/ui/dropdown-menu";
 import { ThemeProvider, useTheme } from "next-themes";
-import NavigationBar from "./components/navbar";
+import NavigationBar from "../components/navbar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
