@@ -8,6 +8,12 @@ export type Info = {
 
 export const Infos: Info[] = [
     {
+        CreatedAt: new Date("2024-04-11"),
+        Url: "https://open.spotify.com/intl-ja/album/4ELmte8UM46oEuYqgQQu0k",
+        ImageUrl: "https://open.spotify.com/intl-ja/album/4ELmte8UM46oEuYqgQQu0k",
+        Title: "「作曲がキライになるまで」を配信しました",
+    },
+    {
         CreatedAt: new Date("2024-06-16"),
         Url: "https://kasaikou.com",
         ImageUrl: "https://storage.googleapis.com/zenn-user-upload/avatar/ccaed67d0d.jpeg",
