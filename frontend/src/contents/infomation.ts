@@ -10,7 +10,7 @@ export const Infos: Info[] = [
     {
         CreatedAt: new Date("2024-04-11"),
         Url: "https://open.spotify.com/intl-ja/album/4ELmte8UM46oEuYqgQQu0k",
-        ImageUrl: "https://open.spotify.com/intl-ja/album/4ELmte8UM46oEuYqgQQu0k",
+        ImageUrl: "https://i.scdn.co/image/ab67616d0000b27368a89de5bbe954054516c509",
         Title: "「作曲がキライになるまで」を配信しました",
     },
     {
