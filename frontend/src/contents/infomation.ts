@@ -3,7 +3,7 @@ export type Info = {
     Url: string,
     ImageUrl: string,
     Title: string,
-    Message: string,
+    Message?: string,
 };
 
 export const Infos: Info[] = [
