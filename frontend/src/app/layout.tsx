@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import App from "./app";
+import App from "../layouts/app";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -27,7 +27,9 @@ export default function RootLayout({
       <App
         hostname={process.env.PUBLIC_URL!}
         bodyClassName={cn("min-h-screen bg-background font-sans antialiased", font.variable)}
-      />
+      >
+        {children}
+      </App>
     </html>
   );
 }

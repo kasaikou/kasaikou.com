@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -14,10 +12,12 @@ import { ThemeProvider, useTheme } from "next-themes";
 import NavigationBar from "../components/navbar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import React from "react";
 
 export default function App(props: {
     bodyClassName: string,
     hostname: string,
+    children: React.ReactNode,
 }) {
 
     return (
@@ -73,8 +73,8 @@ export default function App(props: {
                         </div>
                         <main className="grid md:grid-cols-4 grid-cols-1 container p-3">
                             <div className="md:col-span-3 grid-cols-1 px-2">
-                                <Card>
-
+                                <Card className="p-5">
+                                    {props.children}
                                 </Card>
                             </div>
                             <div className="md:col-span-1 grid-cols-1 px-2">

@@ -1,3 +1,5 @@
+"use client";
+
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
