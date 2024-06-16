@@ -23,10 +23,8 @@ export default function App(props: {
             <Card>
                 <CardContent className="flex aspect-square">
                     <a href={info.Url} className="grid grid-rows-16 h-full w-full">
-                        <div className="row-span-9">
-                            <div className="flex items-center justify-center p-3 h-full">
-                                <img className=" h-full object-contain" src={info.ImageUrl}></img>
-                            </div>
+                        <div className="row-span-9 overflow-hidden">
+                            <img className="w-full max-h-full object-cover" src={info.ImageUrl}></img>
                         </div>
                         <div className="row-span-7 p-3 md:text-l xl:text-xl font-bold">
                             {info.Title}

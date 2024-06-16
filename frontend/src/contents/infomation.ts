@@ -20,4 +20,4 @@ export const Infos: Info[] = [
         Title: "「kasaikou.com」 をリニューアルしました",
         Message: "Amplify から cloudflare への移行を行うついでにリポジトリを一新してページをリニューアルしました。",
     },
-].sort((a, b) => a.CreatedAt < b.CreatedAt ? 1 : -1).reverse();
+].sort((a, b) => a.CreatedAt < b.CreatedAt ? 1 : -1);
