@@ -1,6 +1,3 @@
-"use client";
-
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -11,6 +8,9 @@ import {
     DropdownMenuSeparator,
     DropdownMenuItem
 } from "@/components/ui/dropdown-menu";
+import { useTheme } from "@/lib/theme-provider";
+import { useEffect, useState } from "react";
+import NavbarDarkModeButton from "./navbar-dark-mode-button";
 
 export default function NavigationBar(props: {
     links: {
@@ -19,18 +19,17 @@ export default function NavigationBar(props: {
     }[]
 }) {
 
-    const { setTheme } = useTheme();
-    const components = props.links.map((opt, index) => {
+    const items = props.links.map((opt, index) => {
         return (
-            <Link
+            <a
                 key={index}
                 href={opt.href}
                 className="text-muted-foreground transition-colors hover:text-foreground"
-            >{opt.label}</Link>
+            ><span>{opt.label}</span></a>
         )
     });
 
-    const collapsedComponents = props.links.map((opt, index) => {
+    const collapsedItems = props.links.map((opt, index) => {
         return (
             <Link
                 key={index}
@@ -43,7 +42,7 @@ export default function NavigationBar(props: {
     return (
         <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
             <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-                {components}
+                {items}
             </nav>
             <Sheet>
                 <SheetTrigger asChild>
@@ -52,13 +51,12 @@ export default function NavigationBar(props: {
                         size="icon"
                         className="shrink-0 md:hidden"
                     >
-                        {/* <Menu className="h-5 w-5" /> */}
                         <span className="sr-only">Toggle navigation menu</span>
                     </Button>
                 </SheetTrigger>
                 <SheetContent side="left">
                     <nav className="grid gap-6 text-lg font-medium">
-                        {collapsedComponents}
+                        {collapsedItems}
                     </nav>
                 </SheetContent>
             </Sheet>
@@ -71,10 +69,7 @@ export default function NavigationBar(props: {
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
-                        <DropdownMenuItem onClick={() => setTheme("light")}>LIGHT</DropdownMenuItem>
-                        <DropdownMenuItem onClick={() => setTheme("dark")}>DARK</DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem onClick={() => setTheme("system")}>SYSTEM</DropdownMenuItem>
+                        <NavbarDarkModeButton />
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>

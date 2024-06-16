@@ -8,11 +8,11 @@ import {
     DropdownMenuSeparator,
     DropdownMenuItem
 } from "@/components/ui/dropdown-menu";
-import { ThemeProvider, useTheme } from "next-themes";
 import NavigationBar from "../components/navbar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import React from "react";
+import { ThemeProvider } from "@/lib/theme-provider";
 
 export default function App(props: {
     bodyClassName: string,
@@ -23,7 +23,7 @@ export default function App(props: {
     return (
         <>
             <body className={props.bodyClassName}>
-                <ThemeProvider>
+                <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     <div className="flex min-h-screen w-full flex-col">
                         <NavigationBar links={
                             [
