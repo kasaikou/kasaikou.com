@@ -18,18 +18,20 @@ export default function NavigationBar(props: {
 }) {
 
     const { setTheme } = useTheme();
-    const components = props.links.map((opt) => {
+    const components = props.links.map((opt, index) => {
         return (
             <Link
+                key={index}
                 href={opt.href}
                 className="text-muted-foreground transition-colors hover:text-foreground"
             >{opt.label}</Link>
         )
     });
 
-    const collapsedComponents = props.links.map((opt) => {
+    const collapsedComponents = props.links.map((opt, index) => {
         return (
             <Link
+                key={index}
                 href={opt.href}
                 className="text-muted-foreground hover:text-foreground"
             >{opt.label}</Link>
