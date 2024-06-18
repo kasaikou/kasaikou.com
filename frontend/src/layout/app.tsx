@@ -5,12 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import React from "react";
 import { ThemeProvider } from "@/lib/theme-provider";
 import { Infos } from "@/contents/infomation";
-
-type CardInfo = {
-    href: string,
-    imageUrl: string,
-    text: string,
-}
+import InfoCard from "@/components/info-card";
 
 export default function App(props: {
     bodyClassName: string,
@@ -19,19 +14,8 @@ export default function App(props: {
 }) {
 
     const cards = Infos.map((info, index) => (
-        <CarouselItem className="basis-1/1 md:basis-1/2 xl:basis-1/3" key={index}>
-            <Card>
-                <CardContent className="flex aspect-square">
-                    <a href={info.Url} className="grid grid-rows-16 h-full w-full">
-                        <div className="row-span-9 overflow-hidden">
-                            <img className="w-full max-h-full object-cover" src={info.ImageUrl}></img>
-                        </div>
-                        <div className="row-span-7 p-3 md:text-l xl:text-xl font-bold">
-                            {info.Title}
-                        </div>
-                    </a>
-                </CardContent>
-            </Card>
+        <CarouselItem className="basis-1/1 md:basis-1/2 xl:basis-1/3 w-full" key={index}>
+            {InfoCard(info)}
         </CarouselItem>
     ))
 
