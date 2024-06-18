@@ -9,9 +9,18 @@ export type Info = {
 export const Infos: Info[] = [
     {
         CreatedAt: new Date("2024-04-11"),
-        Urls: ["https://open.spotify.com/intl-ja/album/4ELmte8UM46oEuYqgQQu0k"],
+        Urls: [
+            "https://open.spotify.com/intl-ja/album/4ELmte8UM46oEuYqgQQu0k",
+            "https://music.youtube.com/playlist?list=OLAK5uy_lREbej_yH1_eUCiyaIoKUuxUQ5hqqORoE",
+            "https://h-j-ainashiworks.booth.pm/items/5268315",
+            "https://music.amazon.co.jp/albums/B0D172HGDS",
+            "https://music.apple.com/jp/album/%E4%BD%9C%E6%9B%B2%E3%81%8C%E3%82%AD%E3%83%A9%E3%82%A4%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%BE%E3%81%A7/1740265627?l=en-US",
+            "https://music.line.me/webapp/album/mb00000000038e2acf",
+            "https://s.awa.fm/album/1b07facd89460f729e43",
+        ],
         ImageUrl: "https://i.scdn.co/image/ab67616d0000b27368a89de5bbe954054516c509",
         Title: "「作曲がキライになるまで」を配信しました",
+        Message: "ボーマス 53 で頒布したアルバム「作曲がキライになるまで」のサブスク配信・ダウンロード販売を行いました。"
     },
     {
         CreatedAt: new Date("2024-06-16"),
