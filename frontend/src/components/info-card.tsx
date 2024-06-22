@@ -4,6 +4,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import UrlBadge from "./url-badge";
 import Link from "next/link";
 import { DialogDescription } from "@radix-ui/react-dialog";
+import { Separator } from "./ui/separator";
+import InfoCardDownloadLink from "./info-card-download";
 
 export default function InfoCard(info: Info) {
 
@@ -15,7 +17,7 @@ export default function InfoCard(info: Info) {
 
     const cardContent = (
         <div>
-            <div className="h-[60%] aspect-[10/6] overflow-hidden">
+            <div className="h-[60%] aspect-[16/9] overflow-hidden">
                 <div className="flex items-center justify-center h-full overflow-hidden">
                     <div className="w-full">
                         <img className="w-full max-h-full object-cover" src={info.ImageUrl}></img>
@@ -36,7 +38,7 @@ export default function InfoCard(info: Info) {
         </div>
     );
 
-    if (info.Urls.length == 1) {
+    if (info.Urls.length == 1 && info.Message === undefined && info.Downloads.length === 0) {
         return (
             <>
                 <Card>
@@ -49,6 +51,18 @@ export default function InfoCard(info: Info) {
             </>
         );
     } else {
+        let downloadContent = info.Downloads.length === 0 ? (<></>) : (
+            <div className="py-2">
+                <h3 className="font-bold">ダウンロードコンテンツ</h3>
+                {info.Downloads.map((content, index) => (<div key={index}>
+                    <Separator className="my-2" />
+                    <div>
+                        <InfoCardDownloadLink content={content} />
+                    </div>
+                </div>))}
+            </div>
+        )
+
         return (
             <Card>
                 <CardContent className="flex aspect-square w-full p-5">
@@ -58,7 +72,7 @@ export default function InfoCard(info: Info) {
                                 {cardContent}
                             </a>
                         </DialogTrigger>
-                        <DialogContent className="sm:max-w-[425px]">
+                        <DialogContent className="sm:max-w-[460px]">
                             <DialogHeader>
                                 <div className="md:text-md">
                                     {info.CreatedAt.toDateString()}
@@ -74,6 +88,7 @@ export default function InfoCard(info: Info) {
                             <div>
                                 {badges}
                             </div>
+                            {downloadContent}
                         </DialogContent>
                     </Dialog>
                 </CardContent>

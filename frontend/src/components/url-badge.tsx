@@ -14,6 +14,7 @@ function urlBadgeName(url: string) {
         "https://nicovideo.jp": "ニコニコ",
         "https://open.spotify.com": "Spotify",
         "https://s.awa.fm": "AWA",
+        "https://youtube.com": "YouTube",
         "https://zenn.dev": "Zenn",
     }
 
