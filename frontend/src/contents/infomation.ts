@@ -58,5 +58,12 @@ export const Infos: Info[] = [
         ImageUrl: "https://res.cloudinary.com/zenn/image/upload/s--DBv3MrFO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%2520%25E3%2581%25AE%25E5%258A%25B9%25E6%259E%259C%25E7%259A%2584%25E3%2581%25AA%25E7%25A4%25BE%25E4%25BC%259A%25E5%25AE%259F%25E8%25A3%2585%2520%25E3%2580%2590%25E7%25A4%25BE%25E5%2586%2585%25E7%2594%259F%25E6%2588%2590%2520AI%2520%25E3%2583%258F%25E3%2583%2583%25E3%2582%25AB%25E3%2582%25BD%25E3%2583%25B3%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kasai%2520Kou%25EF%25BC%2588%25E3%2581%258B%25E3%2581%2595%25E3%2581%2584%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjYWVkNjdkMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
         Title: "「LLM の効果的な社会実装 【社内生成 AI ハッカソン】」を公開しました",
         Downloads: [],
+    },
+    {
+        CreatedAt: new Date("2024-06-26"),
+        Urls: ["https://zenn.dev/streamwest1629/articles/report-aws-summit-japan-2024"],
+        ImageUrl: "https://res.cloudinary.com/zenn/image/upload/s--CkUYUChr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%2520Summit%2520Japan%25202024%2520%25E5%258F%2582%25E5%258A%25A0%25E3%2583%25A1%25E3%2583%25A2%25EF%25BC%2588%25E7%25AE%2587%25E6%259D%25A1%25E6%259B%25B8%25E3%2581%258D%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kasai%2520Kou%25EF%25BC%2588%25E3%2581%258B%25E3%2581%2595%25E3%2581%2584%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjYWVkNjdkMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+        Title: "「AWS Summit Japan 2024 参加メモ（箇条書き）」を公開しました",
+        Downloads: [],
     }
 ].sort((a, b) => a.CreatedAt < b.CreatedAt ? 1 : -1);
