@@ -65,5 +65,12 @@ export const Infos: Info[] = [
         ImageUrl: "https://res.cloudinary.com/zenn/image/upload/s--CkUYUChr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%2520Summit%2520Japan%25202024%2520%25E5%258F%2582%25E5%258A%25A0%25E3%2583%25A1%25E3%2583%25A2%25EF%25BC%2588%25E7%25AE%2587%25E6%259D%25A1%25E6%259B%25B8%25E3%2581%258D%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kasai%2520Kou%25EF%25BC%2588%25E3%2581%258B%25E3%2581%2595%25E3%2581%2584%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjYWVkNjdkMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
         Title: "「AWS Summit Japan 2024 参加メモ（箇条書き）」を公開しました",
         Downloads: [],
+    },
+    {
+        CreatedAt: new Date("2024-07-13"),
+        Urls: ["https://zenn.dev/streamwest1629/articles/report-platform-engineering-kaigi-2024"]
+        ImageUrl: "https://res.cloudinary.com/zenn/image/upload/s--LFpnaHaO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Platform%2520Engineering%2520Kaigi%25202024%2520%25E9%2581%258B%25E5%2596%25B6%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kasai%2520Kou%25EF%25BC%2588%25E3%2581%258B%25E3%2581%2595%25E3%2581%2584%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjYWVkNjdkMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        Title: "「Platform Engineering Kaigi 2024 運営しました」を公開しました",
+        Downloads: [],
     }
 ].sort((a, b) => a.CreatedAt < b.CreatedAt ? 1 : -1);
