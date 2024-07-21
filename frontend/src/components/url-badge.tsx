@@ -16,7 +16,7 @@ function urlBadgeName(url: string) {
         "https://s.awa.fm": "AWA",
         "https://youtube.com": "YouTube",
         "https://zenn.dev": "Zenn",
-        "https://registry.terraorm.io": "Terraorm Registry",
+        "https://registry.terraform.io": "Terraorm Registry",
     }
 
     for (const [prefix, name] of Object.entries(urlNameDict)) {
