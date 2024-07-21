@@ -73,4 +73,15 @@ export const Infos: Info[] = [
         Title: "「Platform Engineering Kaigi 2024 運営しました」を公開しました",
         Downloads: [],
     },
+    {
+        CreatedAt: new Date("2024-07-21"),
+        Urls: [
+            "https://zenn.dev/streamwest1629/articles/terraform-vpc-module",
+            "https://github.com/kasaikou/terraform-aws-vpc",
+            "https://registry.terraform.io/modules/kasaikou/vpc/aws/latest",
+        ],
+        ImageUrl: "https://res.cloudinary.com/zenn/image/upload/s--bUKLLkKT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25B7%25B7%25E3%2581%25AE%2520Terraform%2520Module%2520%25E3%2581%25AB%25E9%2581%2595%25E5%2592%258C%25E6%2584%259F%25E3%2582%2592%25E6%2584%259F%25E3%2581%2598%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E7%25B4%258D%25E5%25BE%2597%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2590AWS%2520VPC%25E7%25B7%25A8%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kasai%2520Kou%25EF%25BC%2588%25E3%2581%258B%25E3%2581%2595%25E3%2581%2584%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjYWVkNjdkMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+        Title: "「巷の Terraform Module に違和感を感じたので納得できるものを作ってみた【AWS VPC編】」を公開しました",
+        Downloads: [],
+    },
 ].sort((a, b) => a.CreatedAt < b.CreatedAt ? 1 : -1);
